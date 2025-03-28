@@ -43,6 +43,37 @@
     color: #ff7f50;
   }
   
+/* --- Media Query for Mobile Devices (480px and below) --- */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* --- Media Query for Tablets (768px and below) --- */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+  
   /* Hero Section */
   .hero {
     display: flex;
@@ -988,6 +1019,31 @@
     box-shadow: 0 20px 40px rgba(131, 56, 236, 0.7);
   }
   
+/* --- Media Query for Mobile Devices (480px and below) --- */
+@media screen and (max-width: 480px) {
+    .cards {
+        padding: 40px 10px; 
+    }
+
+    .card {
+        width: 95%;
+        margin: 15px auto; 
+        padding: 25px;
+    }
+}
+/* --- Media Query for Tablets (768px and below) --- */
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Stack the cards vertically */
+        padding: 60px 20px; 
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px auto; /* Center the card */
+        padding: 30px;
+    }
+}
   /* Contact Section */
   .contact {
     padding: 100px 20px;
