@@ -43,20 +43,20 @@
     color: #ff7f50;
   }
   
-/* --- Media Query for Mobile Devices (480px and below) --- */
-@media screen and (max-width: 480px) {
+/* ✅ Media Query for Mobile Devices (between 321px and 480px) */
+@media screen and (min-width: 321px) and (max-width: 480px) {
     .navbar {
         flex-direction: column;
-        padding: 10px;
+        background: #111;
+        padding: 12px;
     }
 
     .navbar a {
         font-size: 14px;
-        padding: 8px;
-        width: 100%;
-        text-align: center;
+        padding: 10px;
     }
 }
+
 
 /* --- Media Query for Tablets (768px and below) --- */
 @media screen and (max-width: 768px) {
@@ -627,6 +627,35 @@
   .navbar a:hover {
     color: #ff9800;
   }
+ /* ✅ Media Query for Mobile Devices (between 321px and 480px) */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        background: #111;
+        padding: 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* --- Media Query for Tablets (768px and below) --- */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
   /* 
   .mode-toggle {
     background: none;
@@ -946,7 +975,35 @@
   .navbar a:hover {
     color: #8338EC; /* Electric Purple on hover */
   }
-  
+/* ✅ Media Query for Mobile Devices (between 321px and 480px) */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        background: #111;
+        padding: 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* --- Media Query for Tablets (768px and below) --- */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
   /* Hero Section */
   .hero {
     height: 100vh;
