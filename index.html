@@ -7,15 +7,19 @@
     <title>AIsure Website</title>
 </head>
 <body>
-<!-- Navigation -->
-<nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <!-- <a href="#testimonials">Testimonials</a> -->
-    <a href="#contact">Contact</a>
-    <!-- <button class="mode-toggle" onclick="toggleMode()">🌙</button> -->
-</nav>
+    <nav class="navbar">
+        <div class="logo">AIsure</div>
+      
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about_detailed.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
 
 <!-- Back-to-Top Button -->
 <button id="backToTop" onclick="scrollToTop()">⬆️</button>
@@ -25,6 +29,12 @@
 <div class="floating-ai">
     🚀 AI Coming Soon
 </div>
+
+<!-- Floating AI Expert Advisor Button -->
+<a href="advisor_form.html" class="floating-ai-btn">
+    Become AI Expert Advisor 🚀
+  </a>
+  
 
 <!-- Hero Section -->
 <header class="futuristic-hero">
@@ -38,11 +48,6 @@
 
     </div>
 
-    
-    <!-- Confused Professor GIF -->
-    <!-- <div class="gif-container">
-        <img src="https://cdn.dribbble.com/users/238327/screenshots/2380321/confused_director.gif" alt="Confused Professor" class="professor-gif">
-    </div> -->
 
     <!-- Floating Icons -->
     <div class="floating-icons">
@@ -73,28 +78,14 @@
         </div>
     </section>
  </div>
-
-<!-- Testimonials Section
-<section class="testimonials" id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-container">
-        <div class="testimonial">
-            <p>"IMsure made my claim process smooth and stress-free. Highly recommend!"</p>
-            <span>- Priya Sharma</span>
-        </div>
-        <div class="testimonial">
-            <p>"Excellent customer service and affordable plans!"</p>
-            <span>- Rahul Mehta</span>
-        </div>
-    </div>
-</section> -->
+  
 
 <!-- About Section -->
  <div style="background-color:black;">
     <section class="container about" id="about">
-        <h2>About Us</h2>
+        <h2 style="color: whitesmoke;">About Us</h2>
         <br>
-        <p>At AIsure, we are transforming the insurance landscape with the power of artificial intelligence.
+        <p style="color: whitesmoke;">At AIsure, we are transforming the insurance landscape with the power of artificial intelligence.
             <br>
              Our AI-driven platform offers smarter, faster, and more accurate insurance solutions tailored to your unique needs.
              <br>
@@ -119,18 +110,24 @@
     </div>
 </section>
 
+
+  
 <canvas id="fireworks-canvas"></canvas>
 
+<div class="social-links">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/surewithai?igsh=MXY0NmVwNGQwejN5aQ==e" target="_blank" class="social-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+    </a>
+  
+    <!-- LinkedIn for Mudralaya Fintech -->
+    <a href="https://www.linkedin.com/company/mudralaya" target="_blank" class="social-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" />
+    </a>
+  </div>
 
-<!-- Footer -->
-<footer class="footer">
-    <p>2025 © AIsure</p>
-    <div class="social-links">
-        <a href="https://www.instagram.com/trustmeinsure?igsh=MXY0NmVwNGQwejN5aQ==" target="_blank" class="instagram-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
-    </div>
-</footer>
+  
+  
 
 <!-- JavaScript -->
 <script src="index.js"></script>

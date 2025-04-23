@@ -1,7 +1,7 @@
 // WhatsApp redirection
 function openWhatsApp() {
-    const phoneNumber = "917070505903";
-    const message = encodeURIComponent("Hi, how can I help you?");
+    const phoneNumber = "911169658920";
+    const message = encodeURIComponent("Hello SAI, Tell me about your business!");
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank");
 }
@@ -18,10 +18,6 @@ for (let i = 0; i < 50; i++) {
     particle.style.animationDuration = `${Math.random() * 5 + 2}s`;
     particles.appendChild(particle);
 }
-// Dark/Light Mode Toggle
-// function toggleMode() {
-//     document.body.classList.toggle('dark-mode');
-// }
 
 // Back-to-Top Button
 window.onscroll = () => {
@@ -70,3 +66,31 @@ tourButton.addEventListener('click', () => {
         tourButton.textContent = "Learn more about onboarding ➡️";
     }, 2000);
 });
+
+function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    menu.classList.toggle("show");
+  }
+  const typewriterWords = ["AI Advisor", "Smart Consultant", "Insurance Guide"];
+  let tIndex = 0, charIndex = 0, isBackspace = false;
+  const twElement = document.getElementById("typewriter");
+  
+  function typeLoop() {
+    const word = typewriterWords[tIndex];
+    if (!isBackspace) {
+      twElement.textContent = word.substring(0, charIndex++);
+      if (charIndex > word.length) {
+        isBackspace = true;
+        setTimeout(typeLoop, 1200);
+        return;
+      }
+    } else {
+      twElement.textContent = word.substring(0, charIndex--);
+      if (charIndex < 0) {
+        isBackspace = false;
+        tIndex = (tIndex + 1) % typewriterWords.length;
+      }
+    }
+    setTimeout(typeLoop, isBackspace ? 50 : 100);
+  }
+  typeLoop();

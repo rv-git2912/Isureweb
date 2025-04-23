@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - AIsure</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#about">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xnnplbnn" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>2025 © AIsure</p>
+  </footer>
+</body>
+</html>
